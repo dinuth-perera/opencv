@@ -35,6 +35,7 @@ def detect_pp_strap(frame):
 
 def main():
     # Open Android camera
+    # cv2.VideoCapture(0) <= for defualt webcam
     cap = cv2.VideoCapture("/dev/video2")
     if not cap.isOpened():
         print("Error: Unable to open Android camera.")
